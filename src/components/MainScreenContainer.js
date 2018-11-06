@@ -7,13 +7,15 @@ class MainScreenContainer extends React.Component {
 state = { currentShown: {}}
 
 randomProfileSelector = () => {
-  return Math.floor(Math.random() * (this.props.userProfiles.length - 1))
+  console.log(Math.floor(Math.random() * (this.props.userProfiles.length)))
+  return Math.floor(Math.random() * (this.props.userProfiles.length))
 }
 
 componentDidMount = () => {
   this.setState({
-    currentShown: this.props.userProfiles[this.randomProfileSelector]
+    currentShown: this.props.userProfiles[this.randomProfileSelector()]
   })
+  console.log(this.state)
 }
 
   render() {
@@ -21,7 +23,6 @@ componentDidMount = () => {
       <h1>Main Screen</h1>
       <div className="picture-frame">
         <ProfilePicture userProfile={this.state.currentShown}/>
-
       </div>
 
     </div>
