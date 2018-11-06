@@ -13,15 +13,20 @@ class MainScreenContainer extends React.Component {
   }
 
   componentDidMount = () => {
+    this.updateCurrentShown();
+    console.log(this.state)
+  }
+
+  updateCurrentShown = () => {
     this.setState({
       currentShown: this.props.userProfiles[this.randomProfileSelector()]
     })
-    console.log(this.state)
   }
 
   render() {
     return <div>
       <ProfilePicture userProfile={this.state.currentShown} />
+      <button onClick={this.updateCurrentShown}>Pass</button>
       <ProfileText userProfile={this.state.currentShown} />
       </div>
   }
@@ -29,7 +34,8 @@ class MainScreenContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    userProfiles: state.userProfiles
+    userProfiles: state.userProfiles,
+    currentUser: state.currentUser
   }
 }
 
