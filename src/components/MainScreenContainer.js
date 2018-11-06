@@ -4,13 +4,23 @@ import '../styles/MainScreenContainer.css';
 import ProfilePicture from './ProfilePicture'
 
 class MainScreenContainer extends React.Component {
+state = { currentShown: {}}
 
+randomProfileSelector = () => {
+  return Math.floor(Math.random() * (this.props.userProfiles.length - 1))
+}
+
+componentDidMount = () => {
+  this.setState({
+    currentShown: this.props.userProfiles[this.randomProfileSelector]
+  })
+}
 
   render() {
     return <div className="main-screen">
       <h1>Main Screen</h1>
       <div className="picture-frame">
-        <ProfilePicture userProfiles={this.props.userProfiles}/>
+        <ProfilePicture userProfile={this.state.currentShown}/>
 
       </div>
 
