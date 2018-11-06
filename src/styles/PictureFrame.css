@@ -1,0 +1,11 @@
+.picture-frame {
+  width: inherit;
+  height: 401px;
+  background-color: grey;
+  margin: auto;
+}
+
+.picture-frame img {
+  max-width: 100%;
+  max-width: 100%;
+}

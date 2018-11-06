@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-import '../styles/MainScreenContainer.css';
 import ProfilePicture from './ProfilePicture';
 import ProfileText from './ProfileText';
 
@@ -20,8 +19,7 @@ class MainScreenContainer extends React.Component {
   }
 
   render() {
-    return <div className="main-screen">
-      <h1>Main Screen</h1>
+    return <div>
       <ProfilePicture userProfile={this.state.currentShown} />
       <ProfileText userProfile={this.state.currentShown} />
       <button>More</button>
