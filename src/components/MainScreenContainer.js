@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-import './MainScreenContainer.css';
-import ProfilePicture from './components/ProfilePicture'
+import '../styles/MainScreenContainer.css';
+import ProfilePicture from './ProfilePicture'
 
 class MainScreenContainer extends React.Component {
 
