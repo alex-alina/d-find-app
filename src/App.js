@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <MainScreenContainer />
+        <div className="navbar"></div>
       </div>
     );
   }

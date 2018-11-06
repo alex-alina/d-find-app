@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../styles/ProfileText.css'
 
 export default function ProfileText(props) {
 
@@ -11,5 +12,6 @@ export default function ProfileText(props) {
     <p>Skills: {props.userProfile.skills}</p>
     <p>Portfolio: {props.userProfile.portfolio}</p>
     <p>Education: {props.userProfile.education}</p>
+    <button>More</button>
   </div>)
 }
