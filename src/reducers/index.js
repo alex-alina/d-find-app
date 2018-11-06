@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import userProfiles from '../features/mainscreen/reducers/userProfiles'
+import userProfiles from './userProfiles'
 
 export default combineReducers({
   userProfiles,
