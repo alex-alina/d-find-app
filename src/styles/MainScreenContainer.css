@@ -1,0 +1,7 @@
+.main-screen {
+  width: 500px;
+  height: 75vh;
+  border: 5px solid grey;
+  margin: auto;
+  padding: 10px;
+}

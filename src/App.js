@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainScreenContainer from './features/mainscreen/MainScreenContainer';
+import MainScreenContainer from './components/MainScreenContainer';
 
 class App extends Component {
   render() {
