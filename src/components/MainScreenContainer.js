@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import '../styles/MainScreenContainer.css';
 import ProfilePicture from './ProfilePicture';
-import ProfileTextNoMore from './ProfileTextNoMore';
+import ProfileText from './ProfileText';
 
 class MainScreenContainer extends React.Component {
   state = { currentShown: {} }
@@ -23,7 +23,8 @@ class MainScreenContainer extends React.Component {
     return <div className="main-screen">
       <h1>Main Screen</h1>
       <ProfilePicture userProfile={this.state.currentShown} />
-      <ProfileTextNoMore userProfile={this.state.currentShown} />
+      <ProfileText userProfile={this.state.currentShown} />
+      <button>More</button>
 
     </div>
   }

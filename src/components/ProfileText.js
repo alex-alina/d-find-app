@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default function ProfileTextNoMore(props) {
+export default function ProfileText(props) {
 
   return (<div className="profile-text">
     <h1>Name: {props.userProfile.name}</h1>
@@ -8,5 +8,8 @@ export default function ProfileTextNoMore(props) {
     <p>Elevator Pitch: {props.userProfile.elevatorPitch}</p>
     <p>Previous Experience: {props.userProfile.previousExperience}</p>
     <p>Languages: {props.userProfile.languages}</p>
+    <p>Skills: {props.userProfile.skills}</p>
+    <p>Portfolio: {props.userProfile.portfolio}</p>
+    <p>Education: {props.userProfile.education}</p>
   </div>)
 }
