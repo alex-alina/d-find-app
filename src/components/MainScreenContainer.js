@@ -4,18 +4,15 @@ import ProfilePicture from './ProfilePicture';
 import ProfileText from './ProfileText';
 import LikeBtnContainer from './LikeBtnContainer';
 import { setShownCandidate } from '../actions/setShownCandidate'
+import PassBtnContainer from './PassBtnContainer';
 
 class MainScreenContainer extends React.Component {
-
-  passHandler = () => {
-    this.props.setShownCandidate();
-  }
 
   render() {
     return <div>
       <ProfilePicture candidateProfile={this.props.shownCandidate} />
       <LikeBtnContainer />
-      <button onClick={this.passHandler}>Pass</button>
+      <PassBtnContainer />
       <ProfileText candidateProfile={this.props.shownCandidate} />
     </div>
   }
