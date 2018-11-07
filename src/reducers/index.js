@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
-import userProfiles from './userProfiles'
+import candidates from './candidates'
 import currentUser from './currentUser'
 import liked from './liked'
 import matches from './matches'
 import passed from './passed'
 
 export default combineReducers({
-  userProfiles,
+  candidates,
   currentUser,
   liked,
   matches,

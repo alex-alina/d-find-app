@@ -9,7 +9,7 @@ const reducer = (state = {}, action = []) => {
       let newState = {...state}
 
       if (userID in newState) {
-        return newState[userID].push(likedID)
+        return newState[userID].concat(likedID)
       } else {
         return {
           ...state,

@@ -12,8 +12,7 @@ const initialState = [
     languages: "French, English",
     portfolio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     education: "KCL",
-    lookingForJob: false,
-    lookingForCandidate: true,
+    likedCompanies: [],
   },
  {
     id: "b@gmail.com",
@@ -28,8 +27,7 @@ const initialState = [
     languages: "French, English",
     portfolio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     education: "UCL",
-    lookingForJob: true,
-    lookingForCandidate: false,
+    likedCompanies: [],
   },
   {
     id: "c@gmail.com",
@@ -44,8 +42,7 @@ const initialState = [
     languages: "French, English",
     portfolio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     education: "UCLA",
-    lookingForJob: true,
-    lookingForCandidate: false,
+    likedCompanies: [],
   },
   {
     id: "d@gmail.com",
@@ -60,18 +57,12 @@ const initialState = [
     languages: "French, English",
     portfolio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     education: "MIT",
-    lookingForJob: true,
-    lookingForCandidate: false,
+    likedCompanies: [],
   },
 ]
 
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case 'ADD_USER':
-      return [
-        ...state,
-        action.payload
-      ]
     default:
       return state
   }

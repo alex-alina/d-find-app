@@ -11,8 +11,6 @@ const initialState = {
   languages: "Spanish, English",
   portfolio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   education: "UVA",
-  lookingForJob: false,
-  lookingForCandidate: true,
 }
 
 const reducer = (state = initialState, action = {}) => {
