@@ -12,7 +12,7 @@ export const candidatesDatabase = [
      languages: "French, English",
      portfolio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
      education: "KCL",
-     likedCompanies: [],
+     likedCompanies: ["iam-logged-in@gmail.com"],
    },
   {
      id: "b@gmail.com",
@@ -42,7 +42,7 @@ export const candidatesDatabase = [
      languages: "French, English",
      portfolio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
      education: "UCLA",
-     likedCompanies: [],
+     likedCompanies: ["iam-logged-in@gmail.com"],
    },
    {
      id: "d@gmail.com",
