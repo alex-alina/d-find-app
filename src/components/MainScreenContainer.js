@@ -7,14 +7,14 @@ import { setShownCandidate } from '../actions/setShownCandidate'
 
 class MainScreenContainer extends React.Component {
 
-  passHandler = (id) => {
-    this.props.setShownCandidate(id);
+  passHandler = () => {
+    this.props.setShownCandidate(this.props.shownCandidate.id);
   }
 
   render() {
     return <div>
       <ProfilePicture candidateProfile={this.props.shownCandidate} />
-      <button onClick={this.passHandler()}>Pass</button>
+      <button onClick={this.passHandler}>Pass</button>
       <ProfileText candidateProfile={this.props.shownCandidate} />
       </div>
   }
