@@ -5,28 +5,11 @@ import ProfileText from './ProfileText';
 
 
 class MainScreenContainer extends React.Component {
- /*  state = { currentShown: {} }
-
- randomProfileSelector = () => {
-    console.log(Math.floor(Math.random() * (this.props.candidates.length)))
-    return Math.floor(Math.random() * (this.props.candidates.length))
-  }
-
-  componentDidMount = () => {
-    this.updateCurrentShown();
-    console.log(this.state)
-  }
-
-  updateCurrentShown = () => {
-    this.setState({
-      currentShown: this.props.userProfiles[this.randomProfileSelector()]
-    })
-  } */
 
   render() {
     return <div>
-      <ProfilePicture userProfile={this.state.currentShown} />
-      <ProfileText userProfile={this.state.currentShown} />
+      <ProfilePicture candidateProfile={this.props.shownCandidate} />
+      <ProfileText candidateProfile={this.props.shownCandidate} />
       </div>
   }
 }
@@ -34,6 +17,7 @@ class MainScreenContainer extends React.Component {
 const mapStateToProps = (state) => {
   return {
     candidates: state.candidates,
+    shownCandidate: state.shownCandidate,
   }
 }
 
