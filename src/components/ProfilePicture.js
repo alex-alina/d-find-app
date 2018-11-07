@@ -1,8 +1,9 @@
-import * as React from 'react'
+import * as React from 'react';
+import '../styles/PictureFrame.css'
 
 export default function ProfilePicture(props) {
 
-  return (<div>
-    <img src={props.userProfile.avatar} alt="" height="500" width="500"></img>
+  return (<div className="picture-frame">
+    <img src={props.userProfile.avatar} alt="" height="401" width="375"></img>
   </div>)
 }

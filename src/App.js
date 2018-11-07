@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import MainScreenContainer from './components/MainScreenContainer';
+import Navbar from './components/Navbar';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello Paul, I'm D.find</h1>
-        <MainScreenContainer />
+        <Route exact path="/" component={MainScreenContainer}/>
+        <Navbar />
       </div>
     );
   }

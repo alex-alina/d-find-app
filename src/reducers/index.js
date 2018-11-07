@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
-import userProfiles from './userProfiles'
+import candidates from './candidates'
 
 export default combineReducers({
-  userProfiles,
+  candidates,
+  
 })
