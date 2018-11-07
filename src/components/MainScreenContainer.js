@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import ProfilePicture from './ProfilePicture';
-import ProfileText from './ProfileText';
+import ProfileText from './ProfileText'
+import { addLike } from '../actions/addLike';
 
 
 class MainScreenContainer extends React.Component {
@@ -23,10 +24,16 @@ class MainScreenContainer extends React.Component {
     })
   }
 
+  likeHandler = () => {
+    this.props.addLike(this.props.currentUser.id, this.state.currentShown.id);
+    this.updateCurrentShown()
+  }
+
   render() {
     return <div>
       <ProfilePicture userProfile={this.state.currentShown} />
       <button onClick={this.updateCurrentShown}>Pass</button>
+      <button onClick={this.likeHandler}>Like</button>
       <ProfileText userProfile={this.state.currentShown} />
       </div>
   }
@@ -39,4 +46,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(MainScreenContainer)
+export default connect(mapStateToProps, { addLike })(MainScreenContainer)
