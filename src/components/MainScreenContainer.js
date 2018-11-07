@@ -8,7 +8,7 @@ import { setShownCandidate } from '../actions/setShownCandidate'
 class MainScreenContainer extends React.Component {
 
   passHandler = () => {
-    this.props.setShownCandidate(this.props.shownCandidate.id);
+    this.props.setShownCandidate();
   }
 
   render() {

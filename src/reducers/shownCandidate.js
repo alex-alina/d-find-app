@@ -8,7 +8,7 @@ const profileSelector =  () => {
 const reducer = (state = profileSelector(), action = {}) => {
   switch (action.type) {
     case SET_SHOWN_CANDIDATE:
-      return profileSelector();
+      return {...state} = profileSelector();
     default:
       return state
   }
