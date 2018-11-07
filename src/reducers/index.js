@@ -7,5 +7,4 @@ export default combineReducers({
   candidates,
   shownCandidate,
   currentUser,
-  
 })
