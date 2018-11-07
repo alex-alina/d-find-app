@@ -8,8 +8,8 @@ class MainScreenContainer extends React.Component {
 
   render() {
     return <div>
-      <ProfilePicture userProfile={this.state.currentShown} />
-      <ProfileText userProfile={this.state.currentShown} />
+      <ProfilePicture candidateProfile={this.props.shownCandidate} />
+      <ProfileText candidateProfile={this.props.shownCandidate} />
       </div>
   }
 }
