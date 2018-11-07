@@ -4,6 +4,7 @@ import currentUser from './currentUser'
 
 export default combineReducers({
   candidates,
+  
   currentUser
   
 })
