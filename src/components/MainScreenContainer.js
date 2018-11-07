@@ -14,10 +14,10 @@ class MainScreenContainer extends React.Component {
   render() {
     return <div>
       <ProfilePicture candidateProfile={this.props.shownCandidate} />
+      <LikeBtnContainer />
       <button onClick={this.passHandler}>Pass</button>
       <ProfileText candidateProfile={this.props.shownCandidate} />
-      <LikeBtnContainer/>
-      </div>
+    </div>
   }
 }
 

@@ -3,10 +3,12 @@ import { Component } from 'react'
 import { connect } from 'react-redux';
 import LikeBtn from './LikeBtn';
 import { addLikedCandidate } from '../actions/addLikedCandidate'
+import { setShownCandidate } from '../actions/setShownCandidate'
 
 class LikeBtnContainer extends Component {
   handleClickedLike = () => {
     this.props.addLikedCandidate(this.props.shownCandidate.id)
+    this.props.setShownCandidate()
   }
 
   render() {
@@ -22,4 +24,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { addLikedCandidate })(LikeBtnContainer)
+export default connect(mapStateToProps, { addLikedCandidate, setShownCandidate } )(LikeBtnContainer)

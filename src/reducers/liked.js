@@ -7,7 +7,7 @@ const reducer = (state = initialState, action = {}) => {
     case ADD_LIKED_CANDIDATE:
       return state.concat(action.payload)
     default:
-    return state
+      return state
   }
 }
 
