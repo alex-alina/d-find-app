@@ -1,16 +1,15 @@
-import * as React from 'react'
-import { connect } from 'react-redux'
+import * as React from 'react';
+import { connect } from 'react-redux';
 import ProfilePicture from './ProfilePicture';
-import ProfileText from './ProfileText'
-import { addLike } from '../actions/addLike';
+import ProfileText from './ProfileText';
 
 
 class MainScreenContainer extends React.Component {
-  state = { currentShown: {} }
+ /*  state = { currentShown: {} }
 
-  randomProfileSelector = () => {
-    console.log(Math.floor(Math.random() * (this.props.userProfiles.length)))
-    return Math.floor(Math.random() * (this.props.userProfiles.length))
+ randomProfileSelector = () => {
+    console.log(Math.floor(Math.random() * (this.props.candidates.length)))
+    return Math.floor(Math.random() * (this.props.candidates.length))
   }
 
   componentDidMount = () => {
@@ -22,18 +21,11 @@ class MainScreenContainer extends React.Component {
     this.setState({
       currentShown: this.props.userProfiles[this.randomProfileSelector()]
     })
-  }
-
-  likeHandler = () => {
-    this.props.addLike(this.props.currentUser.id, this.state.currentShown.id);
-    this.updateCurrentShown()
-  }
+  } */
 
   render() {
     return <div>
       <ProfilePicture userProfile={this.state.currentShown} />
-      <button onClick={this.updateCurrentShown}>Pass</button>
-      <button onClick={this.likeHandler}>Like</button>
       <ProfileText userProfile={this.state.currentShown} />
       </div>
   }
@@ -41,9 +33,8 @@ class MainScreenContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    userProfiles: state.userProfiles,
-    currentUser: state.currentUser
+    candidates: state.candidates,
   }
 }
 
-export default connect(mapStateToProps, { addLike })(MainScreenContainer)
+export default connect(mapStateToProps)(MainScreenContainer)
