@@ -5,17 +5,17 @@ export default function ProfileText(props) {
 
   return (<div className="profile-text">
     <div className="description-header">
-      <h1>{props.shownCandidate.name}</h1>
-      <h2>{props.shownCandidate.location}</h2>
+      <h1>{props.candidateProfile.name}</h1>
+      <h2>{props.candidateProfile.location}</h2>
     </div>
-    <h3>{props.shownCandidate.title}</h3>
+    <h3>{props.candidateProfile.title}</h3>
     <div className="info-container">
-      <p>Elevator Pitch: {props.shownCandidate.elevatorPitch}</p>
-      <p>Previous Experience: {props.shownCandidate.previousExperience}</p>
-      <p>Languages: {props.shownCandidate.languages}</p>
-      <p>Skills: {props.shownCandidate.skills}</p>
-      <p>Portfolio: {props.shownCandidate.portfolio}</p>
-      <p>Education: {props.shownCandidate.education}</p>
+      <p>Elevator Pitch: {props.candidateProfile.elevatorPitch}</p>
+      <p>Previous Experience: {props.candidateProfile.previousExperience}</p>
+      <p>Languages: {props.candidateProfile.languages}</p>
+      <p>Skills: {props.candidateProfile.skills}</p>
+      <p>Portfolio: {props.candidateProfile.portfolio}</p>
+      <p>Education: {props.candidateProfile.education}</p>
     </div>
   </div>)
 }
