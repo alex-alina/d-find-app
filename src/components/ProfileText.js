@@ -5,19 +5,17 @@ export default function ProfileText(props) {
 
   return (<div className="profile-text">
     <div className="description-header">
-      <h1>{props.userProfile.name}</h1>
-      <h2>{props.userProfile.location}</h2>
+      <h1>{props.shownCandidate.name}</h1>
+      <h2>{props.shownCandidate.location}</h2>
     </div>
-    <h3>{props.userProfile.title}</h3>
+    <h3>{props.shownCandidate.title}</h3>
     <div className="info-container">
-      <p>Elevator Pitch: {props.userProfile.elevatorPitch}</p>
-      <p>Previous Experience: {props.userProfile.previousExperience}</p>
-      <p>Languages: {props.userProfile.languages}</p>
-      <p>Skills: {props.userProfile.skills}</p>
-      <p>Portfolio: {props.userProfile.portfolio}</p>
-      <p>Education: {props.userProfile.education}</p>
+      <p>Elevator Pitch: {props.shownCandidate.elevatorPitch}</p>
+      <p>Previous Experience: {props.shownCandidate.previousExperience}</p>
+      <p>Languages: {props.shownCandidate.languages}</p>
+      <p>Skills: {props.shownCandidate.skills}</p>
+      <p>Portfolio: {props.shownCandidate.portfolio}</p>
+      <p>Education: {props.shownCandidate.education}</p>
     </div>
-
-    <button className="toggle-button">^</button>
   </div>)
 }
