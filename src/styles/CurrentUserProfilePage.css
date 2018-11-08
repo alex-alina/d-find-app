@@ -1,0 +1,17 @@
+.box {
+  position: relative;
+  overflow: auto;
+}
+
+.back-button {
+  position: absolute;
+  z-index: 10;
+  top: 55px;
+  left: 20px;
+}
+
+.trash-button {
+  position: absolute;
+  top: 346px;
+  right: 10px;
+}

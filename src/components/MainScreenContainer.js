@@ -5,15 +5,25 @@ import ProfileText from './ProfileText';
 import LikeBtnContainer from './LikeBtnContainer';
 import { setShownCandidate } from '../actions/setShownCandidate'
 import PassBtnContainer from './PassBtnContainer';
+import MessagesButton from '../images/MainScreenMessagesButton.svg';
+import '../styles/mainScreen.css';
+import Navbar from './Navbar';
+
 
 class MainScreenContainer extends React.Component {
 
   render() {
     return <div>
-      <ProfilePicture candidateProfile={this.props.shownCandidate} />
-      <LikeBtnContainer />
-      <PassBtnContainer />
-      <ProfileText candidateProfile={this.props.shownCandidate} />
+      <div className="box">
+        <ProfilePicture candidateProfile={this.props.shownCandidate} />
+        <div className="button-container">
+          <LikeBtnContainer />
+          <img src={MessagesButton} alt="message" className="message-button"></img>
+          <PassBtnContainer />
+        </div>
+        <ProfileText candidateProfile={this.props.shownCandidate} />
+      </div>
+      <Navbar />
     </div>
   }
 }

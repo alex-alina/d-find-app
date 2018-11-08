@@ -1,0 +1,35 @@
+.box {
+  position: relative;
+  overflow: auto;
+}
+
+.button-container {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 369px;
+}
+
+.like-button {
+  margin-right: 48px;
+  margin-left: 63px;
+}
+
+.message-button {
+  margin-right: 48px;
+}
+
+.pass-button {
+  margin-right: 63px;
+}
+
+.box::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  z-index: 20;
+ }
+ 
+ .box::-webkit-scrollbar-thumb {
+   background: #241623;
+   border-radius: 20px;
+ }

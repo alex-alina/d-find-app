@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import MainScreenContainer from './components/MainScreenContainer';
-import Navbar from './components/Navbar';
+import CurrentUserProfilePage from './components/CurrentUserProfilePage';
+
 import { Route } from 'react-router-dom';
 import MatchScreenContainer from './components/MatchScreenContainer';
 
@@ -11,7 +12,7 @@ class App extends Component {
       <div className="App">
         <Route exact path="/" component={MainScreenContainer}/>
         <MatchScreenContainer />
-        
+        <Route path="/currentUser/:id" component={CurrentUserProfilePage}/>
       </div>
     );
   }
