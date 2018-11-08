@@ -1,3 +1,8 @@
+.box {
+  position: relative;
+  overflow: auto;
+}
+
 .button-container {
   width: 100%;
   position: absolute;
