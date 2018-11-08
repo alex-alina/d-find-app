@@ -1,10 +1,9 @@
 .picture-frame {
   width: inherit;
   height: 401px;
-  background-color: grey;
   overflow: hidden;
 }
 
 .picture-frame img {
-  max-width: 100%;
+  width: 100%;
 }
