@@ -5,7 +5,7 @@ import ProfileText from './ProfileText';
 import LikeBtnContainer from './LikeBtnContainer';
 import { setShownCandidate } from '../actions/setShownCandidate'
 import PassBtnContainer from './PassBtnContainer';
-import MessagesButton from '../images/MessagesButton.svg';
+import MessagesButton from '../images/MainScreenMessagesButton.svg';
 import '../styles/mainScreen.css';
 import Navbar from './Navbar';
 
