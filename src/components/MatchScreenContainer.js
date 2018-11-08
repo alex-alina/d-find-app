@@ -30,7 +30,7 @@ class MatchScreenContainer extends Component {
         </div>
 
         <div className="match-h1">
-          <h1>Is's a match!</h1>
+          <h1>It's a match!</h1>
         </div>
 
         <div className="match-p">
