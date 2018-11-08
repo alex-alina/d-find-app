@@ -39,6 +39,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   margin-left: 17px;
+  padding-bottom: 10px;
 }
 
 .info-container h3 {
@@ -57,21 +58,7 @@
   line-height: 16px;
 }
 
-::-webkit-scrollbar {
- width: 6px;
-}
 
-::-webkit-scrollbar-track {
-  background: white;
-  opacity: 1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #241623;
-  width: 6px;
-  border-radius: 20px;
-  box-shadow: inset 0 0 5px grey;
-}
 
 
 

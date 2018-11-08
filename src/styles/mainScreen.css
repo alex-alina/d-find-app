@@ -22,3 +22,14 @@
 .pass-button {
   margin-right: 63px;
 }
+
+.box::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  z-index: 20;
+ }
+ 
+ .box::-webkit-scrollbar-thumb {
+   background: #241623;
+   border-radius: 20px;
+ }
