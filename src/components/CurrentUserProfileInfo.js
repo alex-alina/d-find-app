@@ -9,8 +9,6 @@ export default function CurrentUserProfileInfo(props) {
       <h4>Location</h4>
       <h4>Elevator Pitch</h4>
       <h4>Previous Experiences</h4>
-      <h4>Elevator Pitch</h4>
-      <h4>Previous Experiences</h4>
       <h4>Languages</h4>
       <h4>Skills</h4>
       <h4>Education</h4>
