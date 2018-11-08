@@ -1,0 +1,19 @@
+.button-container {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 369px;
+}
+
+.like-button {
+  margin-right: 48px;
+  margin-left: 63px;
+}
+
+.message-button {
+  margin-right: 48px;
+}
+
+.pass-button {
+  margin-right: 63px;
+}
