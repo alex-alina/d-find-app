@@ -15,16 +15,16 @@ class MainScreenContainer extends React.Component {
   render() {
     return <div>
       <div className="box">
-      <ProfilePicture candidateProfile={this.props.shownCandidate} />
-      <div className="button-container">
-        <LikeBtnContainer />
-        <img src={MessagesButton} alt="message" className="message-button"></img>
-        <PassBtnContainer />
+        <ProfilePicture candidateProfile={this.props.shownCandidate} />
+        <div className="button-container">
+          <LikeBtnContainer />
+          <img src={MessagesButton} alt="message" className="message-button"></img>
+          <PassBtnContainer />
+        </div>
+        <ProfileText candidateProfile={this.props.shownCandidate} />
       </div>
-      <ProfileText candidateProfile={this.props.shownCandidate} />
+      <Navbar />
     </div>
-     <Navbar />
-      </div>
   }
 }
 
