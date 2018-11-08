@@ -2,40 +2,80 @@
   width: 100%;
   height: 318px;
   overflow: auto;
+  letter-spacing: -2%;
 }
 
 .description-header {
+  padding-top: 25px;
   max-width: 100%;
-  height: 50px;
-  border-bottom: 1px solid black;
+  margin-left: 17px;
 }
+ 
 
 .description-header h1, h2 {
   display: inline;
+  font-family: 'Raleway', sans-serif;
+  color: #1C77C3;
+  font-style: bold;
 }
 
 .description-header h2 {
   float: right;
-  font-size: 24px;
-  line-height: 29px;
-  padding-right: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 13px;
   
 }
 
 .description-header h1 {
   font-size: 36px;
-  line-height: 43px;
-  padding-left: 20px;
-
-}
-
-.profile-text h3 {
-  padding-left: 18px;
-  line-height: 5px;
+  line-height: 42px;
+  color: #241623;
 }
 
 .info-container {
   max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: -15px;
+  color:  #241623;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-left: 17px;
 }
+
+.info-container h3 {
+  font-size: 14px;
+  color: #1C77C3;
+  font-style: bold;
+  font-family: 'Raleway',sans-serif;
+}
+
+.info-container h4 { 
+  color: #1C77C3;
+  line-height: 16px;
+  margin-bottom: -12px;
+}
+.info-container p {
+  line-height: 16px;
+}
+
+::-webkit-scrollbar {
+ width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #241623;
+  width: 6px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px grey;
+}
+
+
+
+
+
+
