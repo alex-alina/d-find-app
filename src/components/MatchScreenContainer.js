@@ -14,7 +14,6 @@ import MatchScreenTopIcons from './Match ScreenTopIcons';
 class MatchScreenContainer extends Component {
 
   render() {
-    console.log(this.props.companyImg)
     return (
       <div className="main-container">
         <MatchedScreenBackground />
