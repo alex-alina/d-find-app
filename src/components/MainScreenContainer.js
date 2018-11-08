@@ -11,14 +11,13 @@ import '../styles/mainScreen.css'
 class MainScreenContainer extends React.Component {
 
   render() {
-    return <div>
+    return <div className="box">
       <ProfilePicture candidateProfile={this.props.shownCandidate} />
       <div className="button-container">
         <LikeBtnContainer />
         <img src={MessagesButton} alt="message" className="message-button"></img>
         <PassBtnContainer />
       </div>
-
       <ProfileText candidateProfile={this.props.shownCandidate} />
     </div>
   }
