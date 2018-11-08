@@ -9,3 +9,9 @@
   top: 55px;
   left: 20px;
 }
+
+.trash-button {
+  position: absolute;
+  top: 346px;
+  right: 10px;
+}
