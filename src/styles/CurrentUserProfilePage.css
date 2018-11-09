@@ -13,5 +13,11 @@
 .trash-button {
   position: absolute;
   top: 346px;
-  right: 10px;
+  right: 30px;
+}
+
+.plus-button {
+  position: absolute;
+  top: 346px;
+  left: 30px
 }

@@ -18,7 +18,7 @@ class CurrentUserProfilePage extends React.Component {
       <div className="box">
         <UserProfilePicture currentUserProfile={this.props.currentUser} />
         <img src={trashButton} alt="trash" className="trash-button"></img>
-        <img src={plusButton} alt="add" className="small-plus-button"></img>
+        <img src={plusButton} alt="add" className="plus-button"></img>
         <CurrentUserProfileInfo />
       </div>
       <Navbar />
