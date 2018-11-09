@@ -5,7 +5,7 @@ import CompanyImg from './CompanyImg';
 import ProfileImg from './ProfileImg';
 import MatchedScreenBackground from './MatchedScreenBackground';
 import MatchedScreenMessageBtn from './MatchedScreenMessageBtn';
-import MatchedScreenBackBtn from './MatchedScreenBackBtn';
+import MatchedScreenBackBtnContainer from './MatchedScreenBackBtnContainer';
 import '../styles/MatchScreen.css';
 import MatchScreenTopIcons from './Match ScreenTopIcons';
 
@@ -38,7 +38,7 @@ class MatchScreenContainer extends Component {
 
         <MatchedScreenMessageBtn />
 
-        <MatchedScreenBackBtn />
+        <MatchedScreenBackBtnContainer />
       </div>
     )
   }
