@@ -2,11 +2,19 @@ import * as React from 'react'
 import { Component } from 'react'
 import { connect } from 'react-redux';
 import PassBtn from './PassBtn';
-import { setShownCandidate } from '../actions/setShownCandidate'
+import { setShownCandidate } from '../actions/setShownCandidate';
+import { nextCandidateIndex } from './nextCandidateIndex';
 
 class PassBtnContainer extends Component {
+  
+
   handleClickedPass = () => {
-    this.props.setShownCandidate()
+    if (nextCandidateIndex(this.props.shownCandidate, this.props.candidates) === null) {
+      alert("There are no more candidates!")
+    } else {
+      this.props.setShownCandidate(nextCandidateIndex(this.props.shownCandidate, this.props.candidates))
+    }
+    
   }
 
   render() {
@@ -16,6 +24,11 @@ class PassBtnContainer extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    candidates: state.candidates,
+    shownCandidate: state.shownCandidate,
+  }
+}
 
-
-export default connect(null, { setShownCandidate } )(PassBtnContainer)
+export default connect(mapStateToProps, { setShownCandidate } )(PassBtnContainer)
