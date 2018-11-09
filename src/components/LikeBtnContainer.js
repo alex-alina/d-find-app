@@ -5,7 +5,8 @@ import LikeBtn from './LikeBtn';
 import { addLikedCandidate } from '../actions/addLikedCandidate';
 import { setShownCandidate } from '../actions/setShownCandidate';
 import { addMatch } from '../actions/addMatch';
-import { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
+import { nextCandidateIndex } from './nextCandidateIndex';
 
 class LikeBtnContainer extends Component {
   state = { redirectMatch: null }
@@ -18,7 +19,11 @@ class LikeBtnContainer extends Component {
         redirectMatch: this.props.shownCandidate.id
       })
     } else {
-      this.props.setShownCandidate()
+      if (nextCandidateIndex(this.props.shownCandidate, this.props.candidates) === null) {
+        alert("There are no more candidates!")
+      } else {
+        this.props.setShownCandidate(nextCandidateIndex(this.props.shownCandidate, this.props.candidates))
+      }
     }
   }
 
@@ -38,7 +43,8 @@ class LikeBtnContainer extends Component {
 const mapStateToProps = (state) => {
   return {
     shownCandidate: state.shownCandidate,
-    currentUserID: state.currentUser.id
+    currentUserID: state.currentUser.id,
+    candidates: state.candidates
   }
 }
 
