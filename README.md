@@ -1,4 +1,4 @@
-## D.Find 
+## D.Find - React-Redux Project
 Matching web app for developers and companies looking for developers.
 
 [D.Find Demo](https://xenodochial-kare-750acf.netlify.com/)
