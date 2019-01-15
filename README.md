@@ -28,6 +28,7 @@ Basic functionality:
 ## Authors and acknowledgment
 * Loize Dalco - UX/ UI Designer 
 * Paul van de Ven - Junior Full-Stack Web-developer
+
 Working with these dedicated and hard working colleagues made this project a valuable learning experience where praticing React, Redux, SCRUM and implementing parts of a great design were not only challenging but also fun.
 
 ## License
