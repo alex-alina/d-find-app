@@ -9,7 +9,7 @@ Hint: Alex and Carmen are a match (click like to give them a chance)
 React - Redux MVP using presentational and container components.
 
 Basic functionality:
-* Swipe functionality (the reject button takes you to the next profile)
+* Swipe functionality (the reject/like buttons take you to the next profile or to the match screen)
 * Like button
 * Reject button
 * Back buttons
