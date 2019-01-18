@@ -27,8 +27,8 @@ Current functionality:
 
 ## Authors and acknowledgment
 * Alina Rusu - Junior Full-Stack Web-developer
-* Loize Dalco - UX/ UI Designer 
-* Paul van de Ven - Junior Full-Stack Web-developer
+* [Loize Dalco](https://loized.com/) - UX/ UI Designer(https://www.linkedin.com/in/loize-dalco/)
+* [Paul van de Ven](https://github.com/pvdvpebble) - [Junior Full-Stack Web-developer](https://www.linkedin.com/in/pvdvpebble/)
 
 Working with these dedicated and hard working colleagues made this project a valuable learning experience where praticing React, Redux, SCRUM and implementing parts of a great design were not only challenging but also fun.
 
