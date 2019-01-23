@@ -33,4 +33,4 @@ Current functionality:
 Working with these dedicated and hard working colleagues made this project a valuable learning experience where praticing React, Redux, SCRUM and implementing parts of a great design were not only challenging but also fun.
 
 ## License
-MIT Licence - Copyright &copy; 2018 - Alina Rusu
+MIT Licence - Copyright &copy; 2018 - Alina Rusu, Loize Dalco, Paul van de Ven.
