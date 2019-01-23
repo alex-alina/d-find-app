@@ -26,7 +26,7 @@ Current functionality:
 * Run the app with `yarn start`
 
 ## Authors and acknowledgment
-* Alina Rusu - Junior Full-Stack Web-developer
+* Alina Rusu (me) - [Junior Full-Stack Web-developer](https://www.linkedin.com/in/alina-rusu/)
 * [Loize Dalco](https://loized.com/) - [UX/ UI Designer](https://www.linkedin.com/in/loize-dalco/)
 * [Paul van de Ven](https://github.com/pvdvpebble) - [Junior Full-Stack Web-developer](https://www.linkedin.com/in/pvdvpebble/)
 
